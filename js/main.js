@@ -1,12 +1,12 @@
 /**
- * Основной JavaScript: навигация, FAQ, шапка
+ * Основной JavaScript: навигация, FAQ, анимации
  */
 document.addEventListener('DOMContentLoaded', () => {
   initBurgerMenu();
   initHeaderScroll();
   initFAQ();
   initContactLinks();
-  initMobileCTA();
+  initScrollReveal();
 });
 
 function initBurgerMenu() {
@@ -34,9 +34,12 @@ function initHeaderScroll() {
   const header = document.querySelector('.header');
   if (!header) return;
 
-  window.addEventListener('scroll', () => {
+  const onScroll = () => {
     header.classList.toggle('header--scrolled', window.scrollY > 20);
-  });
+  };
+
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
 }
 
 function initFAQ() {
@@ -84,9 +87,22 @@ function initContactLinks() {
   });
 }
 
-function initMobileCTA() {
-  const mobileCta = document.querySelector('.mobile-cta a');
-  if (mobileCta && !mobileCta.getAttribute('href')) {
-    mobileCta.href = '/contacts/#form';
+function initScrollReveal() {
+  const elements = document.querySelectorAll('.reveal');
+
+  if (!elements.length || !('IntersectionObserver' in window)) {
+    elements.forEach(el => el.classList.add('reveal--visible'));
+    return;
   }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal--visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  elements.forEach(el => observer.observe(el));
 }

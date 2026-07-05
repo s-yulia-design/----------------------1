@@ -5,95 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Декоративная штукатурка в Волгограде — мастер Сергей</title>
   <meta name="description" content="Декоративная штукатурка в Волгограде и области от мастера Сергея. Венецианская, фактурная штукатурка, эффект бетона и шелка. Бесплатная консультация и расчёт стоимости.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Шапка -->
   <header class="header">
     <div class="container header__inner">
-      <a href="/" class="logo">Декоратор <span>Сергей</span></a>
-      <nav class="nav">
-        <a href="/" class="nav__link nav__link--active">Главная</a>
-        <a href="/services/" class="nav__link">Услуги и портфолио</a>
-        <a href="/contacts/" class="nav__link">Контакты</a>
-      </nav>
-      <button class="burger" aria-label="Открыть меню">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="logo">Декоратор <span>Сергей</span></a>
+      <div class="header__actions">
+        <nav class="nav">
+          <a href="index.html" class="nav__link nav__link--active">Главная</a>
+          <a href="services.html" class="nav__link">Услуги и портфолио</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <a href="contacts.html#form" class="btn btn--primary nav__cta">Оставить заявку</a>
+        </nav>
+        <button class="burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- Первый экран -->
     <section class="hero">
       <div class="container hero__grid">
-        <div class="hero__content">
+        <div class="hero__content reveal">
           <span class="hero__badge">Волгоград и область</span>
           <h1 class="hero__title">Декоративная штукатурка в Волгограде от мастера Сергея</h1>
           <p class="hero__text">Я создаю стильные и долговечные декоративные покрытия для квартир, домов, офисов и коммерческих помещений</p>
           <div class="btn-group">
-            <a href="/contacts/#form" class="btn btn--primary">Получить консультацию</a>
-            <a href="/contacts/#form" class="btn btn--secondary">Рассчитать стоимость</a>
+            <a href="contacts.html#form" class="btn btn--primary">Получить консультацию</a>
+            <a href="contacts.html#form" class="btn btn--secondary">Рассчитать стоимость</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-value">6+</div>
+              <div class="hero__stat-label">видов покрытий</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">100%</div>
+              <div class="hero__stat-label">индивидуальный подход</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">0 ₽</div>
+              <div class="hero__stat-label">консультация бесплатно</div>
+            </div>
           </div>
         </div>
-        <div class="hero__image">
-          <div class="placeholder-img" role="img" aria-label="Фото декоративной стены — работа мастера Сергея">
-            <span>Фото моей работы</span>
+        <div class="hero__image reveal">
+          <img
+            class="hero__photo"
+            src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=900&q=80"
+            alt="Декоративная стена в современном интерьере — работа мастера"
+          >
+          <div class="hero__float-card">
+            <strong>Акцентная стена</strong>
+            <span>Декоративная штукатурка под бетон</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Лид-магнит -->
     <section class="section" style="padding-top: 0;">
-      <div class="container">
+      <div class="container reveal">
         <div class="lead-magnet">
           <div class="lead-magnet__icon">🎁</div>
           <p class="lead-magnet__text">Бесплатная консультация по выбору декоративной штукатурки для вашего интерьера</p>
-          <a href="/contacts/#form" class="btn btn--primary" style="margin-left: auto; flex-shrink: 0;">Получить консультацию</a>
+          <a href="contacts.html#form" class="btn btn--primary">Получить консультацию</a>
         </div>
       </div>
     </section>
 
-    <!-- Преимущества -->
     <section class="section section--alt">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
+          <span class="section-label">Преимущества</span>
           <h2 class="section-title">Почему стоит обратиться ко мне</h2>
           <p class="section-subtitle">Я подхожу к каждому проекту индивидуально и делаю акцент на качестве и чистоте работы</p>
         </div>
         <div class="cards-grid">
-          <div class="card">
+          <div class="card reveal">
             <div class="card__icon">🎨</div>
             <h3 class="card__title">Индивидуальный подбор</h3>
             <p class="card__text">Я индивидуально подберу фактуру и цвет под ваш интерьер и освещение</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card__icon">🏠</div>
             <h3 class="card__title">Любые объекты</h3>
             <p class="card__text">Я работаю с квартирами, домами и коммерческими объектами</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card__icon">🧱</div>
             <h3 class="card__title">Подбор материала</h3>
             <p class="card__text">Я помогу выбрать подходящий материал с учётом бюджета и задачи</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card__icon">✨</div>
             <h3 class="card__title">Аккуратность</h3>
             <p class="card__text">Я аккуратно нанесу покрытие и сохраню чистоту на объекте</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card__icon">📐</div>
             <h3 class="card__title">Выезд на замер</h3>
             <p class="card__text">Я могу выехать на замер и оценить состояние поверхности</p>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card__icon">💰</div>
             <h3 class="card__title">Понятная стоимость</h3>
             <p class="card__text">Я заранее рассчитаю понятную стоимость работ без скрытых доплат</p>
@@ -102,47 +122,50 @@
       </div>
     </section>
 
-    <!-- Почему декоративная штукатурка выгодна -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
+          <span class="section-label">Выгода</span>
           <h2 class="section-title">Почему декоративная штукатурка — это выгодно</h2>
         </div>
-        <div class="benefits-list">
-          <div class="benefits-list__item">Служит дольше обычных обоев</div>
-          <div class="benefits-list__item">Выглядит дороже и интереснее покраски</div>
-          <div class="benefits-list__item">Подходит для акцентных стен</div>
-          <div class="benefits-list__item">Можно имитировать камень, бетон, шёлк, мрамор, песок</div>
-          <div class="benefits-list__item">Легко вписывается в современные интерьеры</div>
+        <div class="benefits-grid reveal">
+          <div class="benefit-pill"><span class="benefit-pill__check">✓</span><span class="benefit-pill__text">Служит дольше обычных обоев</span></div>
+          <div class="benefit-pill"><span class="benefit-pill__check">✓</span><span class="benefit-pill__text">Выглядит дороже и интереснее покраски</span></div>
+          <div class="benefit-pill"><span class="benefit-pill__check">✓</span><span class="benefit-pill__text">Подходит для акцентных стен</span></div>
+          <div class="benefit-pill"><span class="benefit-pill__check">✓</span><span class="benefit-pill__text">Имитация камня, бетона, шёлка, мрамора</span></div>
+          <div class="benefit-pill"><span class="benefit-pill__check">✓</span><span class="benefit-pill__text">Вписывается в современные интерьеры</span></div>
         </div>
-        <div class="cta-block cta-block--inline">
+        <div class="cta-block cta-block--inline reveal">
           <h2>Подобрать покрытие под ваш интерьер</h2>
           <p>Расскажите о помещении — я предложу 2–3 варианта фактуры и материала</p>
-          <a href="/contacts/#quiz" class="btn btn--primary">Подобрать покрытие</a>
+          <a href="contacts.html#quiz" class="btn btn--primary">Подобрать покрытие</a>
         </div>
       </div>
     </section>
 
-    <!-- Блок доверия -->
     <section class="section section--alt">
       <div class="container trust-block">
-        <blockquote class="trust-block__quote">
+        <blockquote class="trust-block__quote reveal">
           Я помогаю не просто нанести материал, а подобрать покрытие под интерьер, освещение, назначение помещения и бюджет клиента
         </blockquote>
-        <div class="trust-stats">
+        <div class="trust-stats reveal">
           <div class="trust-stat">
+            <div class="trust-stat__icon">⭐</div>
             <div class="trust-stat__value">Опыт работы</div>
             <div class="trust-stat__label">Годы практики с декоративными покрытиями</div>
           </div>
           <div class="trust-stat">
+            <div class="trust-stat__icon">🛡️</div>
             <div class="trust-stat__value">Аккуратность</div>
             <div class="trust-stat__label">Чистота на объекте и внимание к деталям</div>
           </div>
           <div class="trust-stat">
+            <div class="trust-stat__icon">💬</div>
             <div class="trust-stat__value">Консультация</div>
             <div class="trust-stat__label">Помогу разобраться в материалах и фактурах</div>
           </div>
           <div class="trust-stat">
+            <div class="trust-stat__icon">📍</div>
             <div class="trust-stat__value" data-region>Волгоград и область</div>
             <div class="trust-stat__label">Работаю в <span data-city>Волгограде</span> и по области</div>
           </div>
@@ -150,27 +173,31 @@
       </div>
     </section>
 
-    <!-- Отзывы -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
+          <span class="section-label">Отзывы</span>
           <h2 class="section-title">Отзывы клиентов</h2>
           <p class="section-subtitle">Что говорят те, кто уже доверил мне оформление стен</p>
         </div>
         <div class="reviews-grid">
-          <div class="review-card">
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
             <p class="review-card__text">Сергей помог выбрать фактуру под интерьер, работа получилась аккуратной и очень стильной</p>
             <div class="review-card__author">— Анна, квартира</div>
           </div>
-          <div class="review-card">
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
             <p class="review-card__text">Понравилось, что заранее объяснил разницу между материалами и рассчитал стоимость</p>
             <div class="review-card__author">— Дмитрий, дом</div>
           </div>
-          <div class="review-card">
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
             <p class="review-card__text">Декоративная стена стала главным акцентом в комнате</p>
             <div class="review-card__author">— Елена, гостиная</div>
           </div>
-          <div class="review-card">
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
             <p class="review-card__text">Работа выполнена чисто, спокойно и без лишней суеты</p>
             <div class="review-card__author">— Игорь, офис</div>
           </div>
@@ -178,13 +205,13 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="section section--alt">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
+          <span class="section-label">FAQ</span>
           <h2 class="section-title">Частые вопросы</h2>
         </div>
-        <div class="faq-list">
+        <div class="faq-list reveal">
           <div class="faq-item">
             <button class="faq-item__question" type="button">
               Сколько стоит декоративная штукатурка?
@@ -243,27 +270,25 @@
       </div>
     </section>
 
-    <!-- Финальный CTA -->
     <section class="section">
-      <div class="container">
+      <div class="container reveal">
         <div class="cta-block">
           <h2>Хотите понять, какое покрытие подойдёт именно вам?</h2>
           <p>Оставьте заявку — я подскажу варианты, примерную стоимость и помогу выбрать фактуру под ваш интерьер</p>
-          <a href="/contacts/#form" class="btn btn--primary">Оставить заявку</a>
+          <a href="contacts.html#form" class="btn btn--primary">Оставить заявку</a>
         </div>
       </div>
     </section>
 
-    <!-- SEO-текст -->
     <section class="section section--alt">
-      <div class="container seo-text">
+      <div class="container seo-text reveal">
+        <span class="section-label">О мастере</span>
         <h2 class="section-title">Декоративная штукатурка в Волгограде</h2>
         <p>Я выполняю нанесение декоративной штукатурки в Волгограде и Волгоградской области. Вы можете заказать декоративные покрытия для квартир, частных домов, офисов и коммерческих помещений. Я помогу подобрать фактуру, цвет и материал под интерьер, рассчитать стоимость и выполнить аккуратное нанесение покрытия.</p>
       </div>
     </section>
   </main>
 
-  <!-- Футер -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -274,9 +299,9 @@
         <div>
           <div class="footer__title">Навигация</div>
           <div class="footer__links">
-            <a href="/">Главная</a>
-            <a href="/services/">Услуги и портфолио</a>
-            <a href="/contacts/">Контакты</a>
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги и портфолио</a>
+            <a href="contacts.html">Контакты</a>
           </div>
         </div>
         <div>
@@ -295,12 +320,11 @@
     </div>
   </footer>
 
-  <!-- Мобильная кнопка -->
   <div class="mobile-cta">
-    <a href="/contacts/#form" class="btn btn--primary">Получить консультацию</a>
+    <a href="contacts.html#form" class="btn btn--primary">Получить консультацию</a>
   </div>
 
-  <script src="/js/config.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
