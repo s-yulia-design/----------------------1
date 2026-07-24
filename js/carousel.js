@@ -1,7 +1,7 @@
 /**
- * Карусель фото работ на главной
+ * Карусель фото работ
  */
-document.addEventListener('DOMContentLoaded', () => {
+function initWorksCarousel() {
   const carousel = document.querySelector('.works-carousel');
   if (!carousel) return;
 
@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = carousel.querySelector('.works-carousel__btn--next');
   const dotsContainer = carousel.querySelector('.works-carousel__dots');
 
-  if (!track || slides.length === 0) return;
+  if (!track || slides.length === 0 || !dotsContainer) return;
 
+  dotsContainer.innerHTML = '';
   let index = 0;
   let autoplayTimer;
 
@@ -70,4 +71,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   resetAutoplay();
-});
+}

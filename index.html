@@ -92,49 +92,13 @@
         <div class="works-carousel reveal" aria-label="Галерея работ">
           <button type="button" class="works-carousel__btn works-carousel__btn--prev" aria-label="Предыдущее фото">‹</button>
           <div class="works-carousel__viewport">
-            <div class="works-carousel__track">
-              <div class="works-carousel__slide">
-                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67df0?w=1200&q=80" alt="Акцентная стена под бетон в квартире">
-                <div class="works-carousel__caption">
-                  <h3>Акцентная стена под бетон</h3>
-                  <p>Квартира, гостиная — современный лофт</p>
-                </div>
-              </div>
-              <div class="works-carousel__slide">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="Венецианская штукатурка в интерьере">
-                <div class="works-carousel__caption">
-                  <h3>Венецианская штукатурка</h3>
-                  <p>Эффект мрамора с глубиной и блеском</p>
-                </div>
-              </div>
-              <div class="works-carousel__slide">
-                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80" alt="Декоративное покрытие в спальне">
-                <div class="works-carousel__caption">
-                  <h3>Эффект шёлка в спальне</h3>
-                  <p>Мягкое переливающееся покрытие</p>
-                </div>
-              </div>
-              <div class="works-carousel__slide">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Декоративная стена в офисе">
-                <div class="works-carousel__caption">
-                  <h3>Стена в офисе</h3>
-                  <p>Коммерческий объект, акцентная зона</p>
-                </div>
-              </div>
-              <div class="works-carousel__slide">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Декоративная отделка в доме">
-                <div class="works-carousel__caption">
-                  <h3>Каминная зона в доме</h3>
-                  <p>Имитация камня и натуральных фактур</p>
-                </div>
-              </div>
-            </div>
+            <div class="works-carousel__track" data-portfolio-carousel></div>
           </div>
           <button type="button" class="works-carousel__btn works-carousel__btn--next" aria-label="Следующее фото">›</button>
           <div class="works-carousel__dots" role="tablist" aria-label="Выбор слайда"></div>
         </div>
         <p style="text-align: center; margin-top: 28px;">
-          <a href="services.html" class="btn btn--secondary">Смотреть все услуги и работы</a>
+          <a href="services.html#portfolio" class="btn btn--secondary">Смотреть все услуги и работы</a>
         </p>
       </div>
     </section>
@@ -385,7 +349,9 @@
   </div>
 
   <script src="js/config.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/portfolio-data.js"></script>
   <script src="js/carousel.js"></script>
+  <script src="js/portfolio-render.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

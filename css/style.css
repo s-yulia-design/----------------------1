@@ -858,6 +858,10 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.45rem); }
   gap: 24px;
 }
 
+.portfolio-grid--spaced {
+  margin-top: 48px;
+}
+
 .portfolio-card {
   background: var(--color-white);
   border-radius: var(--radius-md);

@@ -118,3 +118,5 @@ function initScrollReveal() {
 
   elements.forEach(el => observer.observe(el));
 }
+
+window.initScrollReveal = initScrollReveal;
