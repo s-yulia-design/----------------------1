@@ -17,9 +17,9 @@ const SERVICE_CARDS = [
     icon: '✨',
     title: 'Венецианская штукатурка',
     text: 'Образец: панно на мраморе. Эффект глубины, блеска и премиального интерьера.',
-    sampleSrc: 'images/works/012.jpeg',
-    sampleAlt: 'Образец — панно на мраморе',
-    sampleCaption: 'Панно на мраморе'
+    sampleSrc: 'images/works/008.jpeg',
+    sampleAlt: 'Венецианская и фактурная штукатурка — работа на объекте',
+    sampleCaption: 'Венецианская штукатурка'
   },
   {
     id: 'texture',

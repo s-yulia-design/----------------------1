@@ -1398,3 +1398,84 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.45rem); }
     min-height: 320px;
   }
 }
+
+/* ---- About me ---- */
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-me__lead {
+  font-size: 1.12rem;
+  margin-bottom: 16px;
+  line-height: 1.65;
+}
+
+.about-me__content p {
+  color: var(--color-stone);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.about-me__list {
+  margin: 20px 0 28px;
+  padding: 0;
+}
+
+.about-me__list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  color: var(--color-graphite-light);
+  font-size: 0.95rem;
+}
+
+.about-me__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.about-me__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-me__photo {
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 3/4;
+}
+
+.about-me__photo--wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 16/10;
+}
+
+.about-me__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .about-me {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me__gallery {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
