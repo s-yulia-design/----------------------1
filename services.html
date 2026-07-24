@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>!function(){if(location.hostname.slice(-10)==='github.io'){var r=location.pathname.split('/').filter(Boolean)[0];r&&r.indexOf('.')===-1&&document.write('<base href="'+location.origin+'/'+r+'/">')}}();</script>
-  <title>Услуги и портфолио — декоративная штукатурка в Волгограде</title>
-  <meta name="description" content="Виды декоративной штукатурки: венецианская, под бетон, фактурная, эффект шёлка, имитация камня. Портфолио работ мастера Лапина Сергея в Волгограде.">
+  <title>Услуги — декоративная штукатурка в Волгограде | Лапин Сергей</title>
+  <meta name="description" content="Виды декоративной штукатурки и образцы покрытий — мастер Лапин Сергей, Волгоград.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,68 +35,116 @@
     <section class="page-hero">
       <div class="container reveal">
         <span class="section-label">Услуги</span>
-        <h1>Услуги и портфолио</h1>
-        <p>Виды декоративных покрытий, которые я выполняю, и примеры реализованных проектов</p>
+        <h1>Услуги и образцы покрытий</h1>
+        <p>Нажмите на карточку — увидите фото образца нанесения</p>
       </div>
     </section>
 
-    <section class="section section--alt" id="portfolio">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Работы</span>
-          <h2 class="section-title">Портфолио</h2>
-          <p class="section-subtitle">Фото выполненных объектов — листайте карусель или смотрите все работы ниже</p>
-        </div>
-        <div class="works-carousel reveal" aria-label="Галерея работ">
-          <button type="button" class="works-carousel__btn works-carousel__btn--prev" aria-label="Предыдущее фото">‹</button>
-          <div class="works-carousel__viewport">
-            <div class="works-carousel__track" data-portfolio-carousel></div>
-          </div>
-          <button type="button" class="works-carousel__btn works-carousel__btn--next" aria-label="Следующее фото">›</button>
-          <div class="works-carousel__dots" role="tablist" aria-label="Выбор слайда"></div>
-        </div>
-        <div class="portfolio-grid portfolio-grid--spaced" data-portfolio-grid></div>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="section section--alt" id="services">
       <div class="container">
         <div class="section-header reveal">
           <h2 class="section-title">Мои услуги</h2>
-          <p class="section-subtitle">Подберу покрытие под стиль интерьера, назначение помещения и ваш бюджет</p>
+          <p class="section-subtitle">Нажмите на карточку, чтобы увидеть образец покрытия</p>
         </div>
-        <div class="cards-grid">
-          <article class="card reveal">
-            <div class="card__icon">🏗️</div>
-            <h3 class="card__title">Декоративная штукатурка под бетон</h3>
-            <p class="card__text">Я создам современное покрытие для лофта, минимализма, офисов и коммерческих помещений</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon">✨</div>
-            <h3 class="card__title">Венецианская штукатурка</h3>
-            <p class="card__text">Я сделаю эффект мрамора, глубины и глянца для премиальных интерьеров</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon">🎨</div>
-            <h3 class="card__title">Фактурная штукатурка</h3>
-            <p class="card__text">Я создам выразительную поверхность с объёмом, рельефом и индивидуальным рисунком</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon">🌊</div>
-            <h3 class="card__title">Покрытия с эффектом шёлка</h3>
-            <p class="card__text">Я нанесу мягкое переливающееся покрытие для спален, гостиных и стильных акцентных стен</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon">🪨</div>
-            <h3 class="card__title">Имитация камня и природных материалов</h3>
-            <p class="card__text">Я подберу и выполню декоративное решение для стен, ниш, каминных зон и акцентных участков</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon">🔧</div>
-            <h3 class="card__title">Ремонт и обновление декоративных покрытий</h3>
-            <p class="card__text">Я помогу восстановить покрытие, исправить дефекты и обновить внешний вид стены</p>
-          </article>
+
+        <div class="flip-cards-grid">
+          <button type="button" class="flip-card reveal reveal--visible" data-flip-card aria-expanded="false">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__front">
+                <div class="card__icon">🏗️</div>
+                <h3 class="card__title">Декоративная штукатурка под бетон</h3>
+                <p class="card__text">Образец: арт бетон. Подходит для лофта, минимализма, офисов и коммерческих помещений.</p>
+                <span class="flip-card__hint">Нажмите — образец «Арт бетон»</span>
+              </div>
+              <div class="flip-card__face flip-card__back">
+                <img class="flip-card__img" src="images/works/003.jpeg" alt="Образец — арт бетон" width="800" height="600">
+                <div class="flip-card__sample-label">Арт бетон</div>
+                <span class="flip-card__hint flip-card__hint--back">Нажмите ещё раз — описание</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="flip-card reveal reveal--visible" data-flip-card aria-expanded="false">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__front">
+                <div class="card__icon">✨</div>
+                <h3 class="card__title">Венецианская штукатурка</h3>
+                <p class="card__text">Образец: панно на мраморе. Эффект глубины, блеска и премиального интерьера.</p>
+                <span class="flip-card__hint">Нажмите — образец «Панно на мраморе»</span>
+              </div>
+              <div class="flip-card__face flip-card__back">
+                <img class="flip-card__img" src="images/works/012.jpeg" alt="Образец — панно на мраморе" width="800" height="600">
+                <div class="flip-card__sample-label">Панно на мраморе</div>
+                <span class="flip-card__hint flip-card__hint--back">Нажмите ещё раз — описание</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="flip-card reveal reveal--visible" data-flip-card aria-expanded="false">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__front">
+                <div class="card__icon">🎨</div>
+                <h3 class="card__title">Фактурная штукатурка</h3>
+                <p class="card__text">Образец: травертин. Выразительная фактура с объёмом и индивидуальным рисунком.</p>
+                <span class="flip-card__hint">Нажмите — образец «Травертин»</span>
+              </div>
+              <div class="flip-card__face flip-card__back">
+                <img class="flip-card__img" src="images/works/009.jpeg" alt="Образец — травертин" width="800" height="600">
+                <div class="flip-card__sample-label">Травертин</div>
+                <span class="flip-card__hint flip-card__hint--back">Нажмите ещё раз — описание</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="flip-card reveal reveal--visible" data-flip-card aria-expanded="false">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__front">
+                <div class="card__icon">🌊</div>
+                <h3 class="card__title">Декоративное покрытие «Песок»</h3>
+                <p class="card__text">Образец: песок. Мягкая фактура для спален, гостиных и акцентных стен.</p>
+                <span class="flip-card__hint">Нажмите — образец «Песок»</span>
+              </div>
+              <div class="flip-card__face flip-card__back">
+                <img class="flip-card__img" src="images/works/007.jpeg" alt="Образец — песок" width="800" height="600">
+                <div class="flip-card__sample-label">Песок</div>
+                <span class="flip-card__hint flip-card__hint--back">Нажмите ещё раз — описание</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="flip-card reveal reveal--visible" data-flip-card aria-expanded="false">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__front">
+                <div class="card__icon">🪨</div>
+                <h3 class="card__title">Имитация камня</h3>
+                <p class="card__text">Образец: эффект камня. Для стен, ниш, каминных зон и акцентных участков.</p>
+                <span class="flip-card__hint">Нажмите — образец «Эффект камня»</span>
+              </div>
+              <div class="flip-card__face flip-card__back">
+                <img class="flip-card__img" src="images/works/011.jpeg" alt="Образец — эффект камня" width="800" height="600">
+                <div class="flip-card__sample-label">Эффект камня</div>
+                <span class="flip-card__hint flip-card__hint--back">Нажмите ещё раз — описание</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="flip-card reveal reveal--visible" data-flip-card aria-expanded="false">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__front">
+                <div class="card__icon">🔧</div>
+                <h3 class="card__title">Ремонт и обновление покрытий</h3>
+                <p class="card__text">Образец: арт бетон с эффектом состаренной стены. Восстановление декоративного покрытия.</p>
+                <span class="flip-card__hint">Нажмите — образец «Состаренная стена»</span>
+              </div>
+              <div class="flip-card__face flip-card__back">
+                <img class="flip-card__img" src="images/works/002.jpeg" alt="Образец — арт бетон, состаренная стена" width="800" height="600">
+                <div class="flip-card__sample-label">Арт бетон, состаренная стена</div>
+                <span class="flip-card__hint flip-card__hint--back">Нажмите ещё раз — описание</span>
+              </div>
+            </div>
+          </button>
         </div>
+
         <div class="cta-block cta-block--inline reveal">
           <h2>Получить консультацию мастера</h2>
           <p>Не знаете, какое покрытие выбрать? Я помогу разобраться в вариантах и подскажу оптимальное решение</p>
@@ -105,7 +153,7 @@
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <div class="section-header reveal">
           <span class="section-label">Процесс</span>
@@ -124,7 +172,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--alt">
       <div class="container">
         <div class="section-header reveal">
           <span class="section-label">Цены</span>
@@ -154,7 +202,7 @@
       <div class="footer__grid">
         <div>
           <div class="footer__brand" data-full-name>Лапин Сергей</div>
-          <p class="footer__text">Декоративная штукатурка в <span data-city>Волгограде</span> и области. Индивидуальный подход, аккуратная работа, понятные цены.</p>
+          <p class="footer__text">Декоративная штукатурка в <span data-city>Волгограде</span> и области.</p>
         </div>
         <div>
           <div class="footer__title">Навигация</div>
@@ -170,7 +218,6 @@
             <a href="#" data-phone-link><span data-phone>8 (995) 400-87-28</span></a>
             <a href="#" data-email-link><span data-email>sergeylapin19870502@mail.ru</span></a>
             <a href="#" data-whatsapp>WhatsApp</a>
-            <a href="#" data-telegram>Telegram</a>
           </div>
         </div>
       </div>
@@ -186,9 +233,7 @@
   </div>
 
   <script src="js/config.js"></script>
-  <script src="js/portfolio-data.js"></script>
-  <script src="js/carousel.js"></script>
-  <script src="js/portfolio-render.js"></script>
+  <script src="js/service-cards.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
