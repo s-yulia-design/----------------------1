@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>!function(){if(location.hostname.slice(-10)==='github.io'){var r=location.pathname.split('/').filter(Boolean)[0];r&&r.indexOf('.')===-1&&document.write('<base href="'+location.origin+'/'+r+'/">')}}();</script>
-  <title>Декоративная штукатурка в Волгограде — мастер Сергей</title>
+  <title>Декоративная штукатурка в Волгограде — Лапин Сергей</title>
   <meta name="description" content="Декоративная штукатурка в Волгограде и области от мастера Сергея. Венецианская, фактурная штукатурка, эффект бетона и шелка. Бесплатная консультация и расчёт стоимости.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">Декоратор <span>Сергей</span></a>
+      <a href="index.html" class="logo">Лапин <span>Сергей</span></a>
       <div class="header__actions">
         <nav class="nav">
           <a href="index.html" class="nav__link nav__link--active">Главная</a>
@@ -36,7 +36,7 @@
       <div class="container hero__grid">
         <div class="hero__content reveal">
           <span class="hero__badge">Волгоград и область</span>
-          <h1 class="hero__title">Декоративная штукатурка в Волгограде от мастера Сергея</h1>
+          <h1 class="hero__title">Декоративная штукатурка в Волгограде от мастера Лапина Сергея</h1>
           <p class="hero__text">Я создаю стильные и долговечные декоративные покрытия для квартир, домов, офисов и коммерческих помещений</p>
           <div class="btn-group">
             <a href="contacts.html#form" class="btn btn--primary">Получить консультацию</a>
@@ -78,6 +78,64 @@
           <p class="lead-magnet__text">Бесплатная консультация по выбору декоративной штукатурки для вашего интерьера</p>
           <a href="contacts.html#form" class="btn btn--primary">Получить консультацию</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Карусель фото работ — замените src на свои файлы, например images/work-1.jpg -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Портфолио</span>
+          <h2 class="section-title">Фото моих работ</h2>
+          <p class="section-subtitle">Листайте стрелками или свайпом на телефоне</p>
+        </div>
+        <div class="works-carousel reveal" aria-label="Галерея работ">
+          <button type="button" class="works-carousel__btn works-carousel__btn--prev" aria-label="Предыдущее фото">‹</button>
+          <div class="works-carousel__viewport">
+            <div class="works-carousel__track">
+              <div class="works-carousel__slide">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67df0?w=1200&q=80" alt="Акцентная стена под бетон в квартире">
+                <div class="works-carousel__caption">
+                  <h3>Акцентная стена под бетон</h3>
+                  <p>Квартира, гостиная — современный лофт</p>
+                </div>
+              </div>
+              <div class="works-carousel__slide">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="Венецианская штукатурка в интерьере">
+                <div class="works-carousel__caption">
+                  <h3>Венецианская штукатурка</h3>
+                  <p>Эффект мрамора с глубиной и блеском</p>
+                </div>
+              </div>
+              <div class="works-carousel__slide">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80" alt="Декоративное покрытие в спальне">
+                <div class="works-carousel__caption">
+                  <h3>Эффект шёлка в спальне</h3>
+                  <p>Мягкое переливающееся покрытие</p>
+                </div>
+              </div>
+              <div class="works-carousel__slide">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Декоративная стена в офисе">
+                <div class="works-carousel__caption">
+                  <h3>Стена в офисе</h3>
+                  <p>Коммерческий объект, акцентная зона</p>
+                </div>
+              </div>
+              <div class="works-carousel__slide">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Декоративная отделка в доме">
+                <div class="works-carousel__caption">
+                  <h3>Каминная зона в доме</h3>
+                  <p>Имитация камня и натуральных фактур</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="works-carousel__btn works-carousel__btn--next" aria-label="Следующее фото">›</button>
+          <div class="works-carousel__dots" role="tablist" aria-label="Выбор слайда"></div>
+        </div>
+        <p style="text-align: center; margin-top: 28px;">
+          <a href="services.html" class="btn btn--secondary">Смотреть все услуги и работы</a>
+        </p>
       </div>
     </section>
 
@@ -294,7 +352,7 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <div class="footer__brand">Декоратор Сергей</div>
+          <div class="footer__brand" data-full-name>Лапин Сергей</div>
           <p class="footer__text">Декоративная штукатурка в <span data-city>Волгограде</span> и области. Индивидуальный подход, аккуратная работа, понятные цены.</p>
         </div>
         <div>
@@ -308,14 +366,15 @@
         <div>
           <div class="footer__title">Контакты</div>
           <div class="footer__links">
-            <a href="#" data-phone-link><span data-phone>+7 XXX XXX-XX-XX</span></a>
+            <a href="#" data-phone-link><span data-phone>8 (995) 400-87-28</span></a>
+            <a href="#" data-email-link><span data-email>sergeylapin19870502@mail.ru</span></a>
             <a href="#" data-whatsapp>WhatsApp</a>
             <a href="#" data-telegram>Telegram</a>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>&copy; 2026 Декоратор Сергей</span>
+        <span>&copy; 2026 <span data-full-name>Лапин Сергей</span></span>
         <span data-region>Волгоград и Волгоградская область</span>
       </div>
     </div>
@@ -327,5 +386,6 @@
 
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>

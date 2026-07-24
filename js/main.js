@@ -85,6 +85,18 @@ function initContactLinks() {
   document.querySelectorAll('[data-region]').forEach(el => {
     el.textContent = SITE_CONFIG.region;
   });
+
+  document.querySelectorAll('[data-email]').forEach(el => {
+    el.textContent = SITE_CONFIG.email;
+  });
+
+  document.querySelectorAll('[data-email-link]').forEach(el => {
+    el.href = SITE_CONFIG.emailLink;
+  });
+
+  document.querySelectorAll('[data-full-name]').forEach(el => {
+    el.textContent = SITE_CONFIG.fullName;
+  });
 }
 
 function initScrollReveal() {
